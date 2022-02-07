@@ -27,13 +27,13 @@ middleContent.addEventListener('click', e => {
 btnTop.addEventListener('click', ()=> {
     const inputUserInfo = document.querySelector('.user-info');
     const inputPassword = document.querySelector('.password');
-    if(inputUserInfo != "" && inputPassword != ""){
+    if(inputUserInfo.value !== "" && inputPassword.value !== ""){
         mainPage.style.display = 'none';
         newsFeedPage.style.display = 'grid';
     }else{
         goToLoginPage();
     }
 
-}))
+});
 
 
